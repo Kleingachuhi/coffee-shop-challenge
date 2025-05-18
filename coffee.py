@@ -15,5 +15,6 @@ class Coffee:
         else:
             raise Exception("The coffee name must be a string with at least 3 characters.")
 my_cofee = Coffee("Americano")
-print(my_cofee._name)
+# my_cofee.name = "Expresso" --> When this is uncommented out, the output will be the Exception of "The coffee name must be a string with at least 3 characters." because the coffe name is immutable but this tries to assign a new coffee name replacing the already existing coffee name. 
+print(my_cofee.name)
 

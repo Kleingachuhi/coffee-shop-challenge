@@ -9,6 +9,6 @@ class Customer:
         if isinstance(name, str) and 1<= len(name) <= 15:
             self._name = name
         else:
-            raise Exception("The name must be a string with characters between 1 and 15.")
+            raise Exception("The  customer name must be a string with characters between 1 and 15.")
         
 my_customer = Customer("Klein")

@@ -30,6 +30,8 @@ class Coffee:
     def num_order(self):
         return self._count
     def average_price(self):
+        for item in self._orders:
+            self._mean = int(item.price *10) / self._count / 10
         return self._mean
 
 my_cofee = Coffee("Americano")

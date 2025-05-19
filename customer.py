@@ -31,6 +31,11 @@ class Customer:
     def add_order(self):
         self.new_order.append(self)
         return self.new_order
+    
+    @classmethod
+    def most_aficionado(cls, coffee):
+        pass
+    
 my_customer = Customer("Klein")
 new_customer = Customer("Nate")
 my_customer.create_order("Macchiatto", 5.6)

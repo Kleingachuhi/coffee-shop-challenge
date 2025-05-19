@@ -48,8 +48,6 @@ my_coffee._customers.append(order._customer)
 for coffee in my_coffee._orders:
     my_coffee._count +=1
 
-my_coffee._mean = int(order._price * 10) / my_coffee._count / 10
-
 # order.price = 7.0 --> When you have this, the exception is raised since the price is immutable so the output will be the exception "Price is immutable."
 # print(order.price)
 print(order)
@@ -57,3 +55,4 @@ print(my_coffee.orders())
 print(my_coffee.customers())
 print(my_coffee.num_order())
 print(my_coffee.average_price())
+print(new_coffee.average_price())

@@ -1,3 +1,6 @@
+import math
+
+
 class Customer:
     def __init__(self, name):
         self.name = name
@@ -34,7 +37,7 @@ class Customer:
     
     @classmethod
     def most_aficionado(cls, coffee):
-        pass
+        return [math.max(order.price) for order in cls._orders]
     
 my_customer = Customer("Klein")
 new_customer = Customer("Nate")
